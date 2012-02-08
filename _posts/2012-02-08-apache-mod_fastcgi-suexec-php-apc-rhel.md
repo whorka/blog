@@ -5,4 +5,4 @@ title: PHP with APC caching through FastCGI and privilege separation through SuE
 
 I totally made this work.
 
-Now to post about it.
+Now to post about it...
