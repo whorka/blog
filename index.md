@@ -3,4 +3,11 @@ layout: default
 title: whorka.github.com/blog
 ---
 
-This is a placeholder until I figure out how to get Jekyll to build an index.
+## Articles
+
+<ul>
+{% for post in site.posts reversed %}
+<li>{{ post.date | date:"%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+
