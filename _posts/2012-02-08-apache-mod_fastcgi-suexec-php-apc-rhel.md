@@ -5,6 +5,7 @@ tags: linux security web
 ---
 
 # {{ post.title | 'no title' }}
+URL: {{ page.url }}
 
 I totally made this work.
 
