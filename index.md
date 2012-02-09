@@ -7,7 +7,7 @@ title: whorka.github.com/blog
 
 <ul>
 {% for post in site.posts reversed %}
-<li>{{ post.date | date:"%Y-%m-%d" }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+<li>{{ post.date | date:"%Y-%m-%d" }}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
