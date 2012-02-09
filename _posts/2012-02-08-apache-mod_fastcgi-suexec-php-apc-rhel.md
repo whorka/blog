@@ -4,6 +4,8 @@ title: PHP with APC caching through FastCGI and privilege separation through SuE
 tags: linux security web
 ---
 
+# {{ post.title }}
+
 I totally made this work.
 
 Now to post about it.
