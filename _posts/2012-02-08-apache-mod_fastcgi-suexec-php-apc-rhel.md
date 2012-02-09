@@ -4,7 +4,7 @@ title: PHP with APC caching through FastCGI and privilege separation through SuE
 tags: linux security web
 ---
 
-# {{ post.title | 'no title' }}
+# {{ page.title }}
 URL: {{ page.url }}
 
 I totally made this work.
