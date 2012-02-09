@@ -5,7 +5,6 @@ tags: linux security web
 ---
 
 # {{ page.title }}
-URL: {{ page.url }}
 
 I totally made this work.
 
