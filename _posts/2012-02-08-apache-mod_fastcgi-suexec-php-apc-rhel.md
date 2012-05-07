@@ -29,3 +29,7 @@ tags: linux security web
   * `service httpd restart`
 * Hit some PHP scripts and check the logs
   * /var/log/httpd/suexec.log
+1. Lists in a list item:
+    - Indented four spaces.
+        * indented eight spaces.
+    - Four spaces again.
