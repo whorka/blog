@@ -27,6 +27,7 @@ tags: linux security web
   * `chcon --reference /var/www/cgi-bin{,/php-wrapper}`
 * Restart Apache
   * `service httpd restart`
+  * (placeholder bullet)
 * Hit some PHP scripts and check the logs
   * /var/log/httpd/suexec.log
-    - Four spaces again.
+  * (placeholder bullet)
