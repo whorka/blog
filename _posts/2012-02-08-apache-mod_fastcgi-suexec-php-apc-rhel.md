@@ -6,10 +6,10 @@ tags: linux security web
 
 # {{ page.title }}
 
-A pull request is pending for repoforge to update their mod_fastcgi package, so as soon as this is processed, enabling this should now be as simple as:
+[A pull request](https://github.com/repoforge/rpms/pull/165) is pending for repoforge to update their mod_fastcgi package, so as soon as this is processed, enabling this should now be as simple as:
 
  * Install requisite packages:
-  * rpmforge-release from http://repoforge.org/use/
+  * rpmforge-release from [http://repoforge.org/use/]
   * yum install mod_fastcgi php-pecl-apc
  * Add a new user and group for scripts to run as
   * useradd newusername
