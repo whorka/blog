@@ -6,11 +6,12 @@ tags: linux games
 
 # {{ page.title }}
 
-I bought a couple of the [Humble Indie Bundles](http://www.humblebundle.com/) (mostly for [VVVVVV](http://thelettervsixtim.es/)VVVVVV with its beautiful homage to Apple ][ graphics) and was having great fun playing them on my Mac, but about half the games were inaccessible due to lack of Mac support, so I decided to see what the state of Steam on Linux was.
+I bought a couple of the [Humble Indie Bundles](http://www.humblebundle.com/) (mostly for [VVVVVV](http://thelettervsixtim.es/) with its beautiful homage to Apple ``][`` graphics) and was having great fun playing them on my Mac, but about half the games were inaccessible due to lack of Mac support, so I decided to see what the state of Steam on Linux was.
 
 Turns out, gaming on Linux is a lot better than it was last time I looked, and while it's not officially supported, I got Steam up and running on Fedora 15 and it just took a few steps, and no compilation!
 
 Following <https://developer.valvesoftware.com/wiki/Steam_under_Linux> ...
+
 * Install Play On Linux:
   * ``rpm --import http://rpm.playonlinux.com/public.gpg``
   * ``wget -O /etc/yum.repos.d/playonlinux.repo http://rpm.playonlinux.com/playonlinux.repo``
