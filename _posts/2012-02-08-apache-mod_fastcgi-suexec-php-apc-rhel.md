@@ -6,7 +6,7 @@ tags: linux security web
 
 # {{ page.title }}
 
-[A pull request](https://github.com/repoforge/rpms/pull/165) is pending for repoforge to update their mod_fastcgi package, so as soon as this is processed, enabling this should now be as simple as:
+An selinux module for mod_fastcgi is now in repoforge, so enabling this should now be as simple as:
 
 * Install requisite packages:
   * rpmforge-release from <http://repoforge.org/use/>
