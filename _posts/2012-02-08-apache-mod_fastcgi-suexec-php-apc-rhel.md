@@ -20,7 +20,7 @@ An selinux module for mod_fastcgi is now in repoforge, so (as of mod_fastcgi-2.4
 * Enable FastCGI handling of PHP
   * `vi /etc/httpd/conf.d/fastcgi.conf`
   * uncomment PHP config section
-  * Add suexec directive: SuexecUserGroup newusername newgroupname
+  * Add suexec directive: `SuexecUserGroup *newusername newgroupname*`
 * Set up FastCGI PHP wrapper:
   * `cp /usr/share/doc/mod_fastcgi-2.4.6/php-wrapper /var/www/cgi-bin/php-wrapper`
   * `chown newusername:newgroupname /var/www/cgi-bin{,/php-wrapper}`
