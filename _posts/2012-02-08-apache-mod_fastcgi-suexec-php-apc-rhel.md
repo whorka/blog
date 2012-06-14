@@ -36,8 +36,8 @@ An selinux module for mod_fastcgi is now in repoforge, so (as of mod_fastcgi-2.4
 
 * There's a manpage for the httpd selinux rules: ``man httpd_selinux``. Wish I had started here. There are others for other services too.
 * ``/var/log/audit/audit.log`` doesn't show all selinux denials *unless* you first *disable the auditignore rules* by running ``semodule -DB`` (later run ``semodule -B`` to turn them back on).
-* The [most useful reference documentation for mod_fastcgi]("http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html") is not obviously linked from the main mod_fastcgi web site.
-* [mod_fcgid]("http://httpd.apache.org/mod_fcgid/") versus [mod_fastcgi](http://www.fastcgi.com/):
+* The [most useful reference documentation for mod_fastcgi](http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html) is not obviously linked from the main mod_fastcgi web site.
+* [mod_fcgid](http://httpd.apache.org/mod_fcgid/) versus [mod_fastcgi](http://www.fastcgi.com/):
   * mod_fcgid is in active development, and mod_fastcgi is not
   * mod_fcgid is an official Apache project, and mod_fastcgi is not
   * mod_fastcgi requires the Apache User and Group directives to be set before it is loaded, creating a problem on RHEL since /etc/httpd/conf.d is processed before /etc/httpd/conf.
