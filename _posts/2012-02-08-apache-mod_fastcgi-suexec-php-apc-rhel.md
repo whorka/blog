@@ -36,6 +36,7 @@ An selinux module for mod_fastcgi is now in repoforge, so (as of mod_fastcgi-2.4
 
 * There's a manpage for the httpd selinux rules: ``man httpd_selinux``. Wish I had started here. There are others for other services too.
 * ``/var/log/audit/audit.log`` doesn't show all selinux denials *unless* you first *disable the auditignore rules* by running ``semodule -DB`` (later run ``semodule -B`` to turn them back on).
+* The [most useful reference documentation for mod_fastcgi]("http://www.fastcgi.com/mod_fastcgi/docs/mod_fastcgi.html") is not obviously linked from the main mod_fastcgi web site.
 * [mod_fcgid]("http://httpd.apache.org/mod_fcgid/") versus [mod_fastcgi](http://www.fastcgi.com/):
   * mod_fcgid is in active development, and mod_fastcgi is not
   * mod_fcgid is an official Apache project, and mod_fastcgi is not
@@ -43,3 +44,4 @@ An selinux module for mod_fastcgi is now in repoforge, so (as of mod_fastcgi-2.4
   * mod_fcgid claims to be faster, and have better respawn process management than mod_fastcgi
   * **However**, mod_fcgid does not support child PHP processes in a manner that allows for a shared opcode cache like APC, whereas mod_fastcgi does. In order for the cache to maximize hits, it must be shared across all PHP processes for the VirtualHost, meaning that all processes must be spawned from a single parent by setting PHP's PHP_FCGI_CHILDREN variable to >1, and setting the fastcgi maxClassProcesses/MaxProcessesPerClass directive to 1. Under mod_fastcgi, this works as expected, but under mod_fcgid it [blocks the entire VirtualHost on a single PHP script](http://serverfault.com/questions/303535/a-single-php-fastcgi-process-blocks-all-other-php-requests/305093#305093). There has been [discussion on the httpd-users mailing list](http://mail-archives.apache.org/mod_mbox/httpd-users/201003.mbox/%3C20100324193501.GA2363@bitz.org%3E) which indicates that this was a design tradeoff, and that PHP's management of child processes was thought to be problematic (by setting a fixed number of workers that do not scale under load, and by potentially failing to terminate child processes on exit). Only by testing your code, and running for a while to suss out any process management problems, can you determine which will yield better performance in your environment. 
 
+*updated 2012-06-14*
